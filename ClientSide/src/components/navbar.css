@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    justify-content: space-between;
+    
+}
+
+.nav-logo {
+    background-color: azure;
+    border-radius: 50%;
+}
+
+header h3 {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+header div {
+    display: flex;
+   
+    align-items: center;
+   
+}
+
+header .options {
+    margin-right: 2rem;
+}
+
+header .options a {
+    color: white;
+    text-decoration: none;
+   padding: 0
+   
+}
+header .options svg {
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+
+header a {
+    margin-left: 1rem;
+}
+header button {
+ background-color: transparent;
+ border: none;
+ color: azure;
+ font-size: 1rem;
+ margin-left: .7rem;
+ cursor: pointer;
+}

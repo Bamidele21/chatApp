@@ -1,0 +1,128 @@
+@keyframes spin{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+     
+}
+@keyframes glow {
+   0% { box-shadow: 0 0 8px azure,
+                     0 0  12px azure,
+                     0 0 16px azure; }
+
+   20% { box-shadow: 0 0 12px rgb(0, 132, 255)
+                      ,0 0 16px rgb(0, 132, 255),
+                      0 0 20px rgb(0, 132, 255); }
+
+   40% { box-shadow: 0 0 8px green,
+                      0 0 12px green,
+                      0 0 16px green; }
+
+   60% { box-shadow: 0 0 12px rgb(159, 11, 159),
+                      0 0 16px rgb(159, 11, 159),
+                      0 0 20px rgb(159, 11, 159); }
+
+   80% {box-shadow: 0 0 8px red,
+                     0 0 12px red,
+                     0 0 16px red ;}
+
+  100% { box-shadow: 0 0 8px azure,
+                        0 0 12px azure,
+                        0 0 16px  azure;
+} 
+}
+.signin-container {
+    margin-top: 5em;
+    
+}
+
+
+
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+   
+    width: 40%;
+    justify-self: center;
+    align-items: center;
+    text-align: start;
+}
+
+.signup-form input {
+    z-index: 5;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: transparent;
+    color: azure;
+    border: 1px solid azure;
+    box-shadow:
+    0px 0px 2px azure,
+    0px 0px 5px yellow,
+    0px 0px 4px green;
+}
+
+.signup-form label {
+    margin-left: 2rem;
+    align-self: start
+}
+
+.signup-form .submit-container {
+    width: 80%
+  
+
+}
+
+.signup-form .passwordhandle {
+    position: relative;
+    top: -2.4rem;
+    right: -43%;
+    z-index: 999
+}
+.tea-logo {
+    background-color: azure;
+    margin:  2rem 0;
+    padding: 0 ;
+     text-shadow: 0 0 10px orange; 
+   animation: glow 10s linear  infinite;
+   border-radius: 50%;
+   height: 200px;
+   width: 200px;
+   
+}
+
+    
+   
+.submit-button {
+    width: 70%;
+    padding: .3rem;
+    height: 30px;
+    margin: 1rem 0;
+    border: 1px solid azure;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    background-color: black;
+    color: azure;
+    box-shadow:
+    0px 0px 2px azure,
+    0px 0px 6px rgb(0, 140, 255),
+    0px 0px 4px green;
+    cursor: pointer;
+
+
+
+
+}
+
+.submit-button:hover {
+    background-color: azure;
+    color: black;
+    transition: 0.5s;
+}
+.spinning-gear {
+    animation: spin 2s linear infinite;
+    transform-origin: center;
+    margin: 0;
+}
+

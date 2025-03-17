@@ -1,0 +1,74 @@
+@keyframes spin{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+     
+}
+@keyframes glow {
+   0% { box-shadow: 0 0 8px azure,
+                     0 0  12px azure,
+                     0 0 16px azure; }
+
+   20% { box-shadow: 0 0 12px rgb(0, 132, 255)
+                      ,0 0 16px rgb(0, 132, 255),
+                      0 0 20px rgb(0, 132, 255); }
+
+   40% { box-shadow: 0 0 8px green,
+                      0 0 12px green,
+                      0 0 16px green; }
+
+   60% { box-shadow: 0 0 12px rgb(159, 11, 159),
+                      0 0 16px rgb(159, 11, 159),
+                      0 0 20px rgb(159, 11, 159); }
+
+   80% {box-shadow: 0 0 8px red,
+                     0 0 12px red,
+                     0 0 16px red ;}
+
+  100% { box-shadow: 0 0 8px azure,
+                        0 0 12px azure,
+                        0 0 16px  azure;
+} 
+}
+
+
+
+ .login-container form {
+    display: flex;
+    flex-direction: column;
+   
+    width: 40%;
+    justify-self: center;
+    align-items: center;
+    text-align: start; }
+
+    form input {
+        
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: transparent;
+        color: azure;
+        border: 1px solid azure;
+        box-shadow:
+        0px 0px 2px azure,
+        0px 0px 5px yellow,
+        0px 0px 4px green;
+    
+    }
+
+    .login-container  label {
+        align-self: start; 
+        margin-left: 1.5rem;
+
+    }
+
+
+    form .passwordhandle {
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        top: -2.2rem;
+        left: 40%
+
+    }

@@ -1,0 +1,33 @@
+.avatar-image {
+    border-radius: 50%;
+    border: 2px solid azure;
+    width: 200px;
+    height: 200px;
+    margin-top: 3rem;
+}
+
+label input {
+    display: none;
+
+}
+
+.profile-container svg {
+    cursor:pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    left: 21%;
+    bottom: 1.3rem;
+    background-color:white;
+    color: black;
+    border-radius: 50%;
+    padding: 0.15rem
+   
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
