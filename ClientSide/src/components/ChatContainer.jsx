@@ -1,5 +1,5 @@
 import { useChatStore } from "../store/useChatStore"
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import ChatHeader from "./ChatHeader";
 import MessageInput from "./MessageInput";
 import LoadingChat from "./loadingChat";
@@ -8,6 +8,7 @@ LoadingChat
 function ChatContainer () {
     const {messages, getMessages, isMessagesLoading, selectedUsers, listenToMessages, unlistenToMessages} = useChatStore()
     const {authUser}= useAuthStore()
+    const messageEndRef = useRef(null)
 
     useEffect(() => {
         getMessages(selectedUsers._id);
@@ -16,7 +17,13 @@ function ChatContainer () {
             unlistenToMessages();
         }
     }, [selectedUsers._id, getMessages, listenToMessages, unlistenToMessages]);
-    console.log (messages)
+
+    useEffect(() => {
+        if (messageEndRef.current && messages) {
+            messageEndRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    },[messages]);
+    
     
     if (isMessagesLoading) return <LoadingChat/>
 
@@ -30,7 +37,8 @@ function ChatContainer () {
             {messages.map((message)=> (
                 <div
                 key={message._id}
-                className={`chat ${message.senderId === authUser._id? "chat-end":"chat-start"}`}>
+                className={`chat ${message.senderId === authUser._id? "chat-end":"chat-start"}`}
+                ref={messageEndRef}>
                     <img className="chat-img-avatar" 
                     src={message.senderId===authUser._id? authUser.profilePic || "../../public/Profile_avatar_placeholder_large.png" : selectedUsers.profilePic || "../../public/Profile_avatar_placeholder_large.png"} 
                     alt="profile pic"/>

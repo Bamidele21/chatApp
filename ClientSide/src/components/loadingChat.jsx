@@ -4,7 +4,7 @@ function LoadingChat() {
     return (
         <>
         <div className="chat-container">
-            <h1>Loading...<GoGear/></h1>
+            <h1>Loading...<GoGear className="spinning-gear"/></h1>
             
 
         </div>

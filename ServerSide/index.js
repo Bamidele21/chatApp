@@ -13,6 +13,8 @@ dotenv.config()
 
 const PORT = process.env.PORT 
 
+app.use(express.json({limit: '50mb'}));
+
 //returns data in storable .json format//
 app.use (express.json())
 app.use(cookieParser())
