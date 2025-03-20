@@ -7,11 +7,13 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import { ioServer, app, server } from './Lib/socket.js'
 import { Server } from 'socket.io'
+import path from 'path'
 
 
 dotenv.config()
 
-const PORT = process.env.PORT 
+const PORT = process.env.PORT || 3000
+const __dirname = path.resolve()
 
 app.use(express.json({limit: '50mb'}));
 
