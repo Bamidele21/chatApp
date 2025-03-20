@@ -21,8 +21,10 @@ app.use(express.json({limit: '50mb'}));
 app.use (express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"https://whatsthetea.netlify.app"||"http://localhost:5173",
+    AccessControlAllowOrigin: "https://whatsthetea.netlify.app",
+    origin:["https://whatsthetea.netlify.app","http://localhost:5173"],
    credentials: true,
+   optionsSuccessStatus: 200,
 }))
 
 server.listen(PORT, () => {
