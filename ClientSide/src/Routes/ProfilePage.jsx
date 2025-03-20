@@ -33,7 +33,7 @@ function ProfilePage( ) {
         <div className="profile-container">
         <h1>Your Profile</h1>
         
-        <img className="avatar-image" src={selectedImg || authUser.profilePic || "../../public/Profile_avatar_placeholder_large.png" } alt="profile"/> 
+        <img className="avatar-image" src={selectedImg || authUser.profilePic || "../assets/Profile_avatar_placeholder_large.png" } alt="profile"/> 
             <label htmlFor="avatar-upload">
                 <CiCamera height="8px" width="8px" />
                 <input type="file" id="avatar-upload" accept="image/*" onChange={handleImageUpload} disabled={isUpdatingProfile}/>

@@ -165,3 +165,11 @@ time {
     transition: .5s;
 }
 
+.close {
+    position: relative;
+    top: 3px;
+    margin-left: 3px; 
+    cursor: pointer;
+  
+   
+}
