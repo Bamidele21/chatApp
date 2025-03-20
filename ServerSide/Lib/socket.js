@@ -7,7 +7,9 @@ const server = http.createServer(app)
 
 const ioServer = new Server( server, {
     cors: {
-        origin: ["http://localhost:5173"],
+        AccessControlAllowOrigin: "https://whatsthetea.netlify.app",
+        origin: ["http://localhost:5173", "https://whatsthetea.netlify.app"],
+        optionsSuccessStatus: 200,
        
     },
 });
