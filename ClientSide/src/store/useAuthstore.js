@@ -2,7 +2,7 @@ import {create} from "zustand"
 import instaAxios from "../lib/axios"
 import toast from "react-hot-toast";
 import io from "socket.io-client"
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://chatapp-nanx.onrender.com"
 
 export const useAuthStore = create((set, get)=>({
     authUser: null,
