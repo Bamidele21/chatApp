@@ -39,8 +39,9 @@ function LoginPage() {
                             <button type="submit" className="submit-button" disabled={isLoggingIn}>
                                 {isLoggingIn? (
                                     <>
-                                    <GoGear size="18" className="spinning-gear"/>
-                                    Loading...
+                                    Loading..
+                                    <GoGear size="16" className="spinning-gear"/>
+                                    
                                     </>):
                                     (
                                     "Log into your account"

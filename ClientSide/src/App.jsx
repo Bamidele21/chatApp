@@ -9,8 +9,8 @@ import SettingPage from './Routes/SettingPage';
 import ProfilePage from './Routes/ProfilePage';
 import instaAxios from './lib/axios';
 import { useAuthStore } from './store/useAuthstore';
-import {Toaster} from "react-hot-toast"
-
+import {Toaster} from "react-hot-toast";
+import Loading from './components/loading';
 function App() {
 
   const {authUser, checkAuth, isCheckingAuth, onlineUsers} =useAuthStore()
@@ -25,7 +25,7 @@ function App() {
   if (isCheckingAuth && !authUser)
     return (
   <div>
-    <h1>Loading...</h1>
+    <Loading/>
 
   </div>)
   return(

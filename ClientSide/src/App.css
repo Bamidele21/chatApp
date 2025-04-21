@@ -1,6 +1,6 @@
-html {
-    background: radial-gradient( ellipse,
-    rgb(6, 167, 216) 15%,
+body {
+    background: linear-gradient(
+    rgb(9, 2, 48) 13%,
     rgb(1, 35, 98) 89%);
     background-position: fixed center;
     background-size: 100% 100%;
@@ -9,18 +9,36 @@ html {
     margin: 0;
     text-shadow: 0 0 5px black;
     height: 100vh;
+    box-sizing: border-box
 ;
-    
-                 
+
+
+
+           
                  
     
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-body {
+[theme="night"] {
+    background: radial-gradient( ellipse,
+    rgb(9, 2, 48) 14%,
+    rgb(54, 1, 98) 89%);
+    
+}
+
+[theme="sunset"] {
+    background: radial-gradient( ellipse,
+    rgb(120, 3, 3) 14%,
+    rgb(41, 4, 86) 89%);
+}  
+
+[]
+
+html {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
 
 

@@ -40,7 +40,7 @@ function ChatContainer () {
                 className={`chat ${message.senderId === authUser._id? "chat-end":"chat-start"}`}
                 ref={messageEndRef}>
                     <img className="chat-img-avatar" 
-                    src={message.senderId===authUser._id? authUser.profilePic || "../assets/Profile_avatar_placeholder_large.png" : selectedUsers.profilePic || "../assets/Profile_avatar_placeholder_large.png"} 
+                    src={message.senderId===authUser._id? authUser.profilePic || "/Profile_avatar_placeholder_large.png" : selectedUsers.profilePic || "/Profile_avatar_placeholder_large.png"} 
                     alt="profile pic"/>
                     <div className="chat-bubble">
                         <time>{message.createdAt}</time>

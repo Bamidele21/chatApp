@@ -72,3 +72,10 @@
         left: 40%
 
     }
+
+    button svg {
+        
+        position: relative;
+        top: 3px;
+        
+    }

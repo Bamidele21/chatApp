@@ -6,15 +6,18 @@
 }
 .chat-container {
     margin-top: 1rem;
-    height: 70vh;
+    height: 73vh;
     width: 50%;
     justify-self: center;
     align-content: center;
-    margin-left: .8rem;
+    margin-left: 3rem;
+    box-shadow: 0 0 4px azure;
+    padding: 1.3rem;
 
     
     border-radius: 10px;
-    backdrop-filter: blur(20px);
+    
+
     
 }
 
@@ -42,6 +45,7 @@
     box-sizing: border-box;
     margin: 0 .4rem;
     align-items: center;
+    ;
 
     
 }

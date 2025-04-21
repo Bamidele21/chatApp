@@ -1,0 +1,36 @@
+@keyframes typing {
+    from { width: 0;}
+    
+}
+
+@keyframes bouncing {
+    20%, 50%, 80%, to{ transform: translateY(0);}
+    40% { transform: translateY(-70px);}
+    70% { transform: translateY(-15px);}
+    90% { transform: translateY(-4px);}
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    
+}
+h1{
+    
+
+   
+   
+}
+
+.loading-logo {
+    animation: bouncing 1.6s infinite alternate;
+    animation-delay: 4s
+}
+
+
+    
+

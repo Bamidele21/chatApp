@@ -7,7 +7,7 @@ const BASE_URL = "https://chatapp-nanx.onrender.com"
 export const useAuthStore = create((set, get)=>({
     authUser: null,
     isSigningUp: false,
-    isLogginIn: false,
+    isLoggingIn: false,
     isUpdatingProfile: false,
 
     isCheckingAuth: true,
@@ -49,7 +49,7 @@ export const useAuthStore = create((set, get)=>({
     },
     login: async (data)=> {
         try {
-            set({isLogginIn: true})
+            set({isLoggingIn: true})
             const res = await instaAxios.post("/auth/login", data);
             set({authUser: res.data})
             toast.success("Logged in Successfully")
@@ -60,7 +60,7 @@ export const useAuthStore = create((set, get)=>({
             toast.error(error.response.data.message);
             
         } finally {
-            set({isLogginIn: false})
+            set({isLoggingIn: false})
             
         }
     },

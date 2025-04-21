@@ -11,7 +11,7 @@ function ChatHeader () {
         <>
         <div className="chat-header">
          <div >
-            <img className=" header-img" src={selectedUsers.profilePic || "../assets/Profile_avatar_placeholder_large.png"} alt={selectedUsers.fullName}  />
+            <img className=" header-img" src={selectedUsers.profilePic || "/Profile_avatar_placeholder_large.png"} alt={selectedUsers.fullName}  />
          </div>
          <div >
             <h4>{selectedUsers.fullName}</h4>
