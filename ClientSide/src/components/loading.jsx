@@ -8,7 +8,7 @@ function Loading() {
         <div className="loading-container">
             <Tearoom className='loading-logo'/>
             <div className="loading-txt">
-            <h1>Loading! Please wait just a moment</h1>
+            <h1> Please wait just a moment...</h1>
             </div>
         </div>
     )

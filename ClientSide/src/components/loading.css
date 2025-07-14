@@ -28,7 +28,7 @@ h1{
 
 .loading-logo {
     animation: bouncing 1.6s infinite alternate;
-    animation-delay: 4s
+    animation-delay: .5s
 }
 
 
